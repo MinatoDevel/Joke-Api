@@ -1,0 +1,14 @@
+{
+  "name": "joke-api",
+  "version": "1.0.0",
+  "description": "API that returns random Jokes ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Minato",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
