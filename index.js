@@ -1,3 +1,6 @@
+const express = require('express');
+const app = express();
+const PORT = 3000;
 const jokes = [
   "Why don't scientists trust atoms? Because they make up everything!",
   "Why did the scarecrow win an award? Because he was outstanding in his field!",
@@ -155,5 +158,14 @@ const jokes = [
   "Why did the tomato blush? Because it saw the salad dressing!",
   "What do you call a fake noodle? An impasta!"
 ];
-const randomIndex = Math.floor(Math.random() * jokes.length);
-console.log(jokes[randomIndex])
+
+app.get('/Minato', (req, res) => {
+   
+    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  
+    res.json(randomQuote);
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
